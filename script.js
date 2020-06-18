@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var activity
+    var activity=""
 
 
 
