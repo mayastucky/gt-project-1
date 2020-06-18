@@ -10,6 +10,8 @@ $(document).ready(function () {
     var boredType = "http://www.boredapi.com/api/activity"
 
     var buttonId = $(this).attr("id");
+    $(":button").removeClass("selected")
+    $(this).addClass("selected")
     if(buttonId=="random"){
     }else{
       boredType = boredType+typeAdd+buttonId
@@ -46,4 +48,4 @@ $(document).ready(function () {
     });
   });
 });
-})
+});
