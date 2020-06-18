@@ -28,7 +28,7 @@ $(document).ready(function () {
     var ytURL =
       "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" +
       activity +
-      "&key=AIzaSyBTBC_1X8CFQyIOAFv_AyrCOQPyejInNtI";
+      "&key=AIzaSyCjx2987u_zBnYVkuri8eEgHpHwq3AbSRw";
     console.log(ytURL)
     // YT Ajax within Bored ajax
     $.ajax({

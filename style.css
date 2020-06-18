@@ -29,7 +29,8 @@ button {
 .btn:hover {
   background-color: #89b0ae;
   border-color: #bee3db;
-  border-width: thin;
+  border-width: medium;
+  color: white;
 }
 
 #youtubeAPI {
