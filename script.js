@@ -7,7 +7,7 @@ $(document).ready(function () {
     $("#youtubeAPI").empty()
     var activity = "";
     var typeAdd = "?type="
-    var boredType = "http://www.boredapi.com/api/activity"
+    var boredType = "https://www.boredapi.com/api/activity"
 
     var buttonId = $(this).attr("id");
     $(":button").removeClass("selected")
@@ -40,7 +40,7 @@ $(document).ready(function () {
     //   $.cookie("Same-Site", "None")
       var vidID = response2.items[0].id.videoId;
       console.log(vidID)
-      var vidURL = "http://youtube.com/embed/" + vidID;
+      var vidURL = "https://youtube.com/embed/" + vidID;
       var vidEl = $("<iframe allowfullscreen src=" + vidURL + ">").attr("id", "ytVideo");
       vidEl.attr("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture")
       vidEl.attr("width","560").attr("height","315").attr("frameborder","0")
