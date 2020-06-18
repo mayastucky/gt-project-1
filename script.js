@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var activity 
+    var activity
 
 
 
@@ -11,8 +11,7 @@ $(document).ready(function () {
       }).then(function (response) {
           console.log(response)
           $("<button>").on("click", function(){
-            if(id= "education"){
-            $
+            
             
             }
 
