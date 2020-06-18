@@ -1,9 +1,12 @@
 #jumbotron-title {
   text-align: center;
-  font-family: "Quicksand", sans-serif;
+ font-family: 'Open Sans', sans-serif;
   color: #89b0ae;
 }
 
+p{
+  font-family: 'Open Sans', sans-serif;
+}
 #body-color {
   background-color: white;
 }
@@ -27,13 +30,23 @@ button {
 }
 
 .btn:hover {
-  background-color: #89b0ae;
+  background-color: #89b0ae !important;
   border-color: #bee3db;
   border-width: medium;
   color: white;
 }
 
+button.selected {
+  background-color: #FFD6BA;
+}
+
 #youtubeAPI {
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;
+}
+
+#boredAPI {
   margin-top: 50px;
   justify-content: center;
   display: flex;
