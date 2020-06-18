@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var activity
+    var activity 
 
 
 
@@ -10,7 +10,14 @@ $(document).ready(function () {
         method: "GET",
       }).then(function (response) {
           console.log(response)
-          $("<button>").on("click", function())
+          $("<button>").on("click", function(){
+            if(id= "education"){
+            $
+            
+            }
+
+
+          })
           //["education", "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"
 
 
@@ -26,4 +33,5 @@ $(document).ready(function () {
         method: "GET",
     }).then(function (response){
         console.log(response)
+        vidID=response.items[0].id.videoID
     })
