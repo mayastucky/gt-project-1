@@ -1,16 +1,15 @@
 #jumbotron-title {
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  color: #89B0AE
+  font-family: "Quicksand", sans-serif;
+  color: #89b0ae;
 }
 
-
-body{
-  background-color: #FFD6BA;
+#body-color {
+  background-color: white;
 }
 
-#jumbotron-text{
-  color: #FAF9F9 ;
+#jumbotron-text {
+  color: #faf9f9;
 }
 
 button {
@@ -28,5 +27,13 @@ button {
 }
 
 .btn:hover {
-  background-color: #89B0AE;
+  background-color: #89b0ae;
+  border-color: #bee3db;
+  border-width: thin;
+}
+
+#youtubeAPI {
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;
 }
