@@ -13,7 +13,6 @@ p{
 
 #jumbotron-text {
   color: #faf9f9;
-  /* text-shadow: .25px .25px white; */
 }
 
 button {
@@ -32,8 +31,8 @@ button {
 
 .btn:hover {
   background-color: #89b0ae !important;
-  /* border-color: #bee3db;
-  border-width: medium; */
+  border-color: #bee3db;
+  border-width: medium;
   color: white;
 }
 
