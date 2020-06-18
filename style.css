@@ -1,11 +1,11 @@
 #jumbotron-title {
   text-align: center;
- font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #89b0ae;
 }
 
-p{
-  font-family: 'Open Sans', sans-serif;
+p {
+  font-family: "Open Sans", sans-serif;
 }
 #body-color {
   background-color: white;
@@ -37,17 +37,19 @@ button {
 }
 
 button.selected {
-  background-color: #FFD6BA;
+  background-color: #ffd6ba;
 }
 
 #youtubeAPI {
   margin-top: 50px;
   justify-content: center;
   display: flex;
+  margin-bottom: 50px;
 }
 
 #boredAPI {
   margin-top: 50px;
   justify-content: center;
   display: flex;
+  background-color: #ffd6ba;
 }
