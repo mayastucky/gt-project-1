@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Jumbotron start -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4" id="jumbotron-title">Entertain Me</h1>
+        <p class="lead">
+          Welcome to Entertain Me! As we go through our time in quarantine, we
+          have run out of ideas for what to do to pass the time. If you don't
+          know what to do or how to get started, this application is for you.
+          Simply select one of the buttons below (or a random button if you're
+          up for anything, and we will give you a random suggestion and a
+          YouTube video on how to get started. Be safe, be well, and stay sane.
+        </p>
+      </div>
+    </div>
+    <!-- Jumbotron End -->
+    <!--making buttons for page start-->
+    <div class="buttons-container">
+      <button type="button" id="education">Education</button>
+      <button type="button" id="recreational">Recreational</button>
+      <button type="button" id="social">Social</button>
+      <button type="button" id="diy">DIY</button>
+      <button type="button" id="charity">Charity</button>
+      <button type="button" id="cooking">Cooking</button>
+      <button type="button" id="relaxation">Relaxation</button>
+      <button type="button" id="music">Music</button>
+      <button type="button" id="busywork">Busywork</button>
+      <button type="button" id="random">Random</button>
+    </div>
+    <!--making buttons for page end-->
+    <!-- container for the apis -->
+    <div class="container">
+      <div id="boredAPI">
+        <!-- BORED API DYNAMICALLY GENERATES HERE -->
+      </div>
+      <div id="youtubeAPI">
+        <!-- YOUTUBE API DYNAMICALLY GENERATES HERE -->
+      </div>
+    </div>
+  </body>
 </html>
