@@ -1,9 +1,20 @@
 $(document).ready(function () {
-  var activity = "";
+ //?type=+buttonId specific;
 
-  var boredType = "http://www.boredapi.com/api/activity" //?type=+buttonId specific;
-//   $("<button>").on("click", function(){
-//     var buttonId = $(this).attr("id");
+
+  $(":button").on("click", function(){
+    $("#boredAPI").empty()
+    $("#youtubeAPI").empty()
+    var activity = "";
+    var typeAdd = "?type="
+    var boredType = "http://www.boredapi.com/api/activity"
+
+    var buttonId = $(this).attr("id");
+    if(buttonId=="random"){
+    }else{
+      boredType = boredType+typeAdd+buttonId
+    }
+
   $.ajax({
     url: boredType,
     method: "GET",
@@ -12,6 +23,8 @@ $(document).ready(function () {
     console.log(response);
     activity = response.activity;
     // Paste into #boredAPI div
+    var boredAPIText = $("<div>").text(activity)
+    $("#boredAPI").append(boredAPIText)
     var ytURL =
       "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" +
       activity +
@@ -31,9 +44,6 @@ $(document).ready(function () {
       vidEl.attr("width","560").attr("height","315").attr("frameborder","0")
       $("#youtubeAPI").append(vidEl);
     });
-
-    $("<button>").on("click", function () {});
-    //["education", "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"
-//   });
+  });
 });
 })
