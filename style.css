@@ -8,18 +8,22 @@ p {
   font-family: "Open Sans", sans-serif;
 }
 #body-color {
-  background-color: white;
+  background-color: rgb(245, 245, 245);
 }
 
 #jumbotron-text {
   color: #faf9f9;
+  text-align: center;
 }
 
 button {
-  background-color: white;
+  background-color: #89b0ae !important;
   margin: 10px;
   border-style: none;
   align-content: center;
+}
+.btn{
+  color: white;
 }
 
 .btn-group {
@@ -27,6 +31,7 @@ button {
   margin: auto;
   display: flex;
   justify-content: center;
+
 }
 
 .btn:hover {
@@ -36,8 +41,13 @@ button {
   color: white;
 }
 
-button.selected {
-  background-color: #ffd6ba;
+.btn.selected {
+  background-color: #89b0ae;
+  color: white;
+  outline: none;
+  -webkit-box-shadow: inset 0px 0px 10px #5e7a79;
+     -moz-box-shadow: inset 0px 0px 10px #5e7a79;
+          box-shadow: inset 0px 0px 10px #5e7a79;
 }
 
 #youtubeAPI {
@@ -52,4 +62,5 @@ button.selected {
   justify-content: center;
   display: flex;
   background-color: #ffd6ba;
+  font-family: ;
 }

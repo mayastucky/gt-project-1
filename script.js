@@ -33,18 +33,18 @@ $(document).ready(function () {
       "&key=AIzaSyCjx2987u_zBnYVkuri8eEgHpHwq3AbSRw";
     console.log(ytURL)
     // YT Ajax within Bored ajax
-    $.ajax({
-      url: ytURL,
-      method: "GET",
-    }).then(function (response2) {
-      var vidID = response2.items[0].id.videoId;
-      console.log(vidID)
-      var vidURL = "https://youtube.com/embed/" + vidID;
-      var vidEl = $("<iframe allowfullscreen src=" + vidURL + ">").attr("id", "ytVideo");
-      vidEl.attr("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture")
-      vidEl.attr("width","560").attr("height","315").attr("frameborder","0")
-      $("#youtubeAPI").append(vidEl);
-    });
+    // $.ajax({
+    //   url: ytURL,
+    //   method: "GET",
+    // }).then(function (response2) {
+    //   var vidID = response2.items[0].id.videoId;
+    //   console.log(vidID)
+    //   var vidURL = "https://youtube.com/embed/" + vidID;
+    //   var vidEl = $("<iframe allowfullscreen src=" + vidURL + ">").attr("id", "ytVideo");
+    //   vidEl.attr("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture")
+    //   vidEl.attr("width","560").attr("height","315").attr("frameborder","0")
+    //   $("#youtubeAPI").append(vidEl);
+    // });
   });
 });
 });
