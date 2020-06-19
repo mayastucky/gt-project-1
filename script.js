@@ -30,7 +30,7 @@ $(document).ready(function () {
     var ytURL =
       "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" +
       activity +
-      "&key=AIzaSyCjx2987u_zBnYVkuri8eEgHpHwq3AbSRw";
+      "&key=AIzaSyBy3WSmmn91jC4oXWkgQ6gpQ3PN38JfrfM";
     console.log(ytURL)
     // YT Ajax within Bored ajax
     $.ajax({
