@@ -37,7 +37,6 @@ $(document).ready(function () {
       url: ytURL,
       method: "GET",
     }).then(function (response2) {
-    //   $.cookie("Same-Site", "None")
       var vidID = response2.items[0].id.videoId;
       console.log(vidID)
       var vidURL = "http://youtube.com/embed/" + vidID;
@@ -48,4 +47,5 @@ $(document).ready(function () {
     });
   });
 });
+
 });
