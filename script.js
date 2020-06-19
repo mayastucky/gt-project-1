@@ -1,13 +1,14 @@
+var videoCount;
+var activity;
+var typeAdd;
+var boredType;
+var vidURL;
+var vidID;
+var vidEl;
+var response2;
+
 $(document).ready(function () {
   //?type=+buttonId specific;
-  var videoCount;
-  var activity;
-  var typeAdd;
-  var boredType;
-  var vidURL;
-  var vidID;
-  var vidEl;
-  var response2
 
   $(":button").on("click", function () {
     $("#boredAPI").empty();
@@ -62,33 +63,35 @@ $(document).ready(function () {
           .attr("frameborder", "0")
           .attr("style", "padding: 10px");
         $("#youtubeAPI").append(
-          "<button type = 'button' class = 'btn hidden' id = 'next'>Next</button>"
+          "<button type = 'button' class = 'btn hidden' id = 'previous'>Previous</button>"
         );
         $("#youtubeAPI").append(vidEl);
         $("#youtubeAPI").append(
-          "<button type = 'button' class = 'btn hidden' id = 'previous'>Previous</button>"
+          "<button type = 'button' class = 'btn hidden' id = 'next'>Next</button>"
         );
+        $("#next").on("click", function () {
+          console.log("clicked");
+          console.log(videoCount);
+          videoCount++;
+          if (videoCount > 4) {
+            videoCount = 0;
+          }
+          vidID = response2.items[videoCount].id.videoId;
+          vidURL = "https://youtube.com/embed/" + vidID;
+          $("#ytVideo").attr("src", vidURL);
+        });
+        $("#previous").on("click", function () {
+          console.log("clicked");
+          console.log(videoCount);
+          videoCount--;
+          if (videoCount < 0) {
+            videoCount = 4;
+          }
+          vidID = response2.items[videoCount].id.videoId;
+          vidURL = "https://youtube.com/embed/" + vidID;
+          $("#ytVideo").attr("src", vidURL);
+        });
       });
     });
-  });
-
-  $("#next").on("click", function () {
-    videoCount++;
-    if (videoCount > 4) {
-      videoCount = 0;
-      vidID = response2.items[videoCount].id.videoId;
-      vidURL = "https://youtube.com/embed/" + vidID;
-      $("#ytVideo").attr("src", vidURL)
-      console.log(response2.items[videoCount].id.videoId)
-    }
-  });
-  $("#previous").on("click", function () {
-    videoCount--;
-    if(videoCount<0){
-        videoCount=4
-    }
-    vidID = response2.items[videoCount].id.videoId;
-    vidURL = "https://youtube.com/embed/" + vidID;
-    $("#ytVideo").attr("src", vidURL)
   });
 });
