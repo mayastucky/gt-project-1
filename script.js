@@ -1,12 +1,20 @@
 $(document).ready(function () {
   //?type=+buttonId specific;
   var videoCount
+  var activity
+  var typeAdd
+  var boredType
+  var vidURL
+  var vidID
+  var vidEl
+    
   $(":button").on("click", function () {
     $("#boredAPI").empty()
     $("#youtubeAPI").empty()
-    var activity = "";
-    var typeAdd = "?type=";
-    var boredType = "https://www.boredapi.com/api/activity";
+    $(".hidden").css("visibility", "visible")
+    activity = "";
+    typeAdd = "?type=";
+    boredType = "https://www.boredapi.com/api/activity";
     
     var buttonId = $(this).attr("id");
     $(":button").removeClass("selected");
@@ -49,11 +57,15 @@ $(document).ready(function () {
           .attr("width", "560")
           .attr("height", "315")
           .attr("frameborder", "0");
+          vidEl.prepend("<button type = 'button' class = 'btn hidden' id = 'next'>Next</button>")
+          vidEl.append("<button type = 'button' class = 'btn hidden' id = 'previous'>Previous</button>")
         $("#youtubeAPI").append(vidEl);
       });
     });
   });
 
-  $("#next").on("click")
+  $("#next").on("click" function(){
+
+  })
 
 });

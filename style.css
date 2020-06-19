@@ -1,6 +1,6 @@
 #jumbotron-title {
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Saira", sans-serif;
   color: #89b0ae;
 }
 
@@ -53,6 +53,8 @@ button.selected {
 
   /* display: flex; */
   margin-bottom: 50px;
+  background-color: #bee3db;
+  border-radius: 25px;
 }
 
 #boredAPI {
@@ -62,6 +64,30 @@ button.selected {
   background-color: #ffd6ba;
   font-size: 25px;
   font-family: "Raleway", sans-serif;
+  border-radius: 25px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.card {
+  color: #bee3db;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #555b6e;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  font-size: medium;
+  font-family: "Saira", sans-serif;
+  color: gray;
 }
 .carousel-inner{
   height: 315;
