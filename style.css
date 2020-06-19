@@ -13,6 +13,7 @@ p {
 
 #jumbotron-text {
   color: #faf9f9;
+  text-align: center;
 }
 
 button {
@@ -38,6 +39,10 @@ button {
 
 button.selected {
   background-color: #ffd6ba;
+  outline: none;
+  -webkit-box-shadow: inset 0px 0px 10px #cabea3;
+  -moz-box-shadow: inset 0px 0px 10px #cabea3;
+  box-shadow: inset 0px 0px 10px #cabea3;
 }
 
 #youtubeAPI {
@@ -52,4 +57,6 @@ button.selected {
   justify-content: center;
   display: flex;
   background-color: #ffd6ba;
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
 }
