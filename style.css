@@ -51,7 +51,7 @@ button.selected {
   width: auto;
   height: auto;
 
-  /* display: flex; */
+  display: flex;
   margin-bottom: 50px;
   background-color: #bee3db;
   border-radius: 25px;
@@ -88,9 +88,4 @@ button.selected {
   font-size: medium;
   font-family: "Saira", sans-serif;
   color: gray;
-}
-.carousel-inner{
-  height: 315;
-  width: 560;
-  display: block;
 }

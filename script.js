@@ -7,6 +7,7 @@ $(document).ready(function () {
   var vidURL;
   var vidID;
   var vidEl;
+  var response2
 
   $(":button").on("click", function () {
     $("#boredAPI").empty();
@@ -58,7 +59,8 @@ $(document).ready(function () {
         vidEl
           .attr("width", "560")
           .attr("height", "315")
-          .attr("frameborder", "0");
+          .attr("frameborder", "0")
+          .attr("style", "padding: 10px");
         $("#youtubeAPI").append(
           "<button type = 'button' class = 'btn hidden' id = 'next'>Next</button>"
         );
@@ -70,5 +72,23 @@ $(document).ready(function () {
     });
   });
 
-  $("#next").on("click", function () {});
+  $("#next").on("click", function () {
+    videoCount++;
+    if (videoCount > 4) {
+      videoCount = 0;
+      vidID = response2.items[videoCount].id.videoId;
+      vidURL = "https://youtube.com/embed/" + vidID;
+      $("#ytVideo").attr("src", vidURL)
+      console.log(response2.items[videoCount].id.videoId)
+    }
+  });
+  $("#previous").on("click", function () {
+    videoCount--;
+    if(videoCount<0){
+        videoCount=4
+    }
+    vidID = response2.items[videoCount].id.videoId;
+    vidURL = "https://youtube.com/embed/" + vidID;
+    $("#ytVideo").attr("src", vidURL)
+  });
 });
