@@ -1,16 +1,19 @@
 #jumbotron-title {
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  color: #89B0AE
+  font-family: "Open Sans", sans-serif;
+  color: #89b0ae;
 }
 
-
-body{
-  background-color: #FFD6BA;
+p {
+  font-family: "Open Sans", sans-serif;
+}
+#body-color {
+  background-color: white;
 }
 
-#jumbotron-text{
-  color: #FAF9F9 ;
+#jumbotron-text {
+  color: #faf9f9;
+  text-align: center;
 }
 
 button {
@@ -28,5 +31,32 @@ button {
 }
 
 .btn:hover {
-  background-color: #89B0AE;
+  background-color: #89b0ae !important;
+  border-color: #bee3db;
+  border-width: medium;
+  color: white;
+}
+
+button.selected {
+  background-color: #ffd6ba;
+  outline: none;
+  -webkit-box-shadow: inset 0px 0px 10px #cabea3;
+  -moz-box-shadow: inset 0px 0px 10px #cabea3;
+  box-shadow: inset 0px 0px 10px #cabea3;
+}
+
+#youtubeAPI {
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+#boredAPI {
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;
+  background-color: #ffd6ba;
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
 }

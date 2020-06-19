@@ -1,13 +1,12 @@
 $(document).ready(function () {
  //?type=+buttonId specific;
 
-
   $(":button").on("click", function(){
     $("#boredAPI").empty()
     $("#youtubeAPI").empty()
     var activity = "";
     var typeAdd = "?type="
-    var boredType = "http://www.boredapi.com/api/activity"
+    var boredType = "https://www.boredapi.com/api/activity"
 
     var buttonId = $(this).attr("id");
     $(":button").removeClass("selected")
@@ -30,16 +29,16 @@ $(document).ready(function () {
     var ytURL =
       "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" +
       activity +
-      "&key=AIzaSyCjx2987u_zBnYVkuri8eEgHpHwq3AbSRw";
+      "&key=AIzaSyDKgsVLLSormwn1mfdafnThlX2E2VdFVA4";
     console.log(ytURL)
     // YT Ajax within Bored ajax
     $.ajax({
       url: ytURL,
       method: "GET",
     }).then(function (response2) {
-      var vidID = response2.items[0].id.videoId;
+      var vidID = response2.items[Math.floor(Math.random()*4)].id.videoId;
       console.log(vidID)
-      var vidURL = "http://youtube.com/embed/" + vidID;
+      var vidURL = "https://youtube.com/embed/" + vidID;
       var vidEl = $("<iframe allowfullscreen src=" + vidURL + ">").attr("id", "ytVideo");
       vidEl.attr("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture")
       vidEl.attr("width","560").attr("height","315").attr("frameborder","0")

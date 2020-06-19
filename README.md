@@ -1,3 +1,4 @@
+
 # Entertain Me
 Welcome to Entertain Me! As we go through our time in quarantine, we have run out of ideas for what to do to pass the time. If you don't know what to do or how to get started, this application is for you. Simply select one of the buttons below (or a random button if you're up for anything, and we will give you a random suggestion and a YouTube video on how to get started. Be safe, be well, and stay sane.
 
@@ -47,3 +48,5 @@ SOFTWARE.
 ## Contributing
 
 Nick, Maya, Brian and Diego combinated efforts to create Entertain Me. 
+
+
