@@ -48,6 +48,9 @@ button.selected {
 #youtubeAPI {
   margin-top: 50px;
   justify-content: center;
+  width: auto;
+  height: auto;
+
   display: flex;
   margin-bottom: 50px;
   background-color: #bee3db;
@@ -64,9 +67,9 @@ button.selected {
   border-radius: 25px;
 }
 
-.hidden {
+/* .hidden {
   visibility: hidden;
-}
+} */
 
 .card {
   color: #bee3db;
