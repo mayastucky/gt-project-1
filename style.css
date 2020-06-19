@@ -1,6 +1,6 @@
 #jumbotron-title {
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Saira', sans-serif;
   color: #89b0ae;
 }
 
@@ -59,4 +59,24 @@ button.selected {
   background-color: #ffd6ba;
   font-size: 25px;
   font-family: "Raleway", sans-serif;
+  border-radius: 25px;
+}
+
+.card{
+  color: #bee3db;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #555b6e;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  font-size: medium;
+  font-family: 'Saira', sans-serif;
+  color: gray;
 }
