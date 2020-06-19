@@ -48,7 +48,10 @@ button.selected {
 #youtubeAPI {
   margin-top: 50px;
   justify-content: center;
-  display: flex;
+  width: auto;
+  height: auto;
+
+  /* display: flex; */
   margin-bottom: 50px;
 }
 
@@ -59,4 +62,9 @@ button.selected {
   background-color: #ffd6ba;
   font-size: 25px;
   font-family: "Raleway", sans-serif;
+}
+.carousel-inner{
+  height: 315;
+  width: 560;
+  display: block;
 }
