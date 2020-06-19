@@ -1,21 +1,21 @@
 $(document).ready(function () {
   //?type=+buttonId specific;
-  var videoCount
-  var activity
-  var typeAdd
-  var boredType
-  var vidURL
-  var vidID
-  var vidEl
-    
+  var videoCount;
+  var activity;
+  var typeAdd;
+  var boredType;
+  var vidURL;
+  var vidID;
+  var vidEl;
+
   $(":button").on("click", function () {
-    $("#boredAPI").empty()
-    $("#youtubeAPI").empty()
-    $(".hidden").css("visibility", "visible")
+    $("#boredAPI").empty();
+    $("#youtubeAPI").empty();
+    videoCount = 0;
     activity = "";
     typeAdd = "?type=";
     boredType = "https://www.boredapi.com/api/activity";
-    
+
     var buttonId = $(this).attr("id");
     $(":button").removeClass("selected");
     $(this).addClass("selected");
@@ -43,9 +43,11 @@ $(document).ready(function () {
         url: ytURL,
         method: "GET",
       }).then(function (response2) {
+        console.log(response2);
+        vidID = response2.items[videoCount].id.videoId;
         console.log(vidID);
-        var vidURL = "https://youtube.com/embed/" + vidID;
-        var vidEl = $("<iframe allowfullscreen src=" + vidURL + ">").attr(
+        vidURL = "https://youtube.com/embed/" + vidID;
+        vidEl = $("<iframe allowfullscreen src=" + vidURL + ">").attr(
           "id",
           "ytVideo"
         );
@@ -57,15 +59,16 @@ $(document).ready(function () {
           .attr("width", "560")
           .attr("height", "315")
           .attr("frameborder", "0");
-          vidEl.prepend("<button type = 'button' class = 'btn hidden' id = 'next'>Next</button>")
-          vidEl.append("<button type = 'button' class = 'btn hidden' id = 'previous'>Previous</button>")
+        $("#youtubeAPI").append(
+          "<button type = 'button' class = 'btn hidden' id = 'next'>Next</button>"
+        );
         $("#youtubeAPI").append(vidEl);
+        $("#youtubeAPI").append(
+          "<button type = 'button' class = 'btn hidden' id = 'previous'>Previous</button>"
+        );
       });
     });
   });
 
-  $("#next").on("click" function(){
-
-  })
-
+  $("#next").on("click", function () {});
 });
