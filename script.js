@@ -1,7 +1,6 @@
 $(document).ready(function () {
  //?type=+buttonId specific;
 
-
   $(":button").on("click", function(){
     $("#boredAPI").empty()
     $("#youtubeAPI").empty()
@@ -30,14 +29,14 @@ $(document).ready(function () {
     var ytURL =
       "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" +
       activity +
-      "&key=AIzaSyCjx2987u_zBnYVkuri8eEgHpHwq3AbSRw";
+      "&key=AIzaSyDKgsVLLSormwn1mfdafnThlX2E2VdFVA4";
     console.log(ytURL)
     // YT Ajax within Bored ajax
     $.ajax({
       url: ytURL,
       method: "GET",
     }).then(function (response2) {
-      var vidID = response2.items[0].id.videoId;
+      var vidID = response2.items[Math.floor(Math.random()*4)].id.videoId;
       console.log(vidID)
       var vidURL = "https://youtube.com/embed/" + vidID;
       var vidEl = $("<iframe allowfullscreen src=" + vidURL + ">").attr("id", "ytVideo");
@@ -47,4 +46,5 @@ $(document).ready(function () {
     });
   });
 });
+
 });
