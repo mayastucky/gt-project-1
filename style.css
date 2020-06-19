@@ -64,6 +64,10 @@ button.selected {
   border-radius: 25px;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .card {
   color: #bee3db;
 }
