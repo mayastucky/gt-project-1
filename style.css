@@ -1,6 +1,6 @@
 #jumbotron-title {
   text-align: center;
-  font-family: 'Saira', sans-serif;
+  font-family: "Saira", sans-serif;
   color: #89b0ae;
 }
 
@@ -50,6 +50,8 @@ button.selected {
   justify-content: center;
   display: flex;
   margin-bottom: 50px;
+  background-color: #bee3db;
+  border-radius: 25px;
 }
 
 #boredAPI {
@@ -62,7 +64,7 @@ button.selected {
   border-radius: 25px;
 }
 
-.card{
+.card {
   color: #bee3db;
 }
 
@@ -77,6 +79,6 @@ button.selected {
   margin: 0;
   padding: 10px;
   font-size: medium;
-  font-family: 'Saira', sans-serif;
+  font-family: "Saira", sans-serif;
   color: gray;
 }
