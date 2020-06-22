@@ -95,10 +95,18 @@ button.selected {
 #previous{
   font-size: 3rem;
   padding: 0;
+  margin: 0;
 }
 #next{
   font-size: 3rem;
   padding: 0;
+  margin: 0;
+}
+#previous:hover{
+  border: none;
+}
+#next:hover{
+  border: none;
 }
 @media only screen and (max-width: 768px){
   .footer {
