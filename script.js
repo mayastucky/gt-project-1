@@ -36,7 +36,7 @@ $(document).ready(function () {
       var boredAPIText = $("<div>").text(activity);
       $("#boredAPI").append(boredAPIText);
       var ytURL =
-        "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" +
+        "https://www.googleapis.com/youtube/v3/search?q=" +
         activity +
         "&key=AIzaSyAuYyVyy_w2WqTYvCmCTrKO6K7me2jMV8I";
       console.log(ytURL);
