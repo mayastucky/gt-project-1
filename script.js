@@ -61,14 +61,24 @@ $(document).ready(function () {
           .attr("width", "560")
           .attr("height", "315")
           .attr("frameborder", "0")
-          .attr("style", "padding: 10px");
-        $("#youtubeAPI").append(
-          "<button type = 'button' class = 'btn hidden' id = 'previous'>Previous</button>"
+          .attr("style", "padding: 10px")
+          .attr("style", "margin: auto");
+        var buttonRow = $("<div class = 'row'>")
+        var prevCol=$("<div class='col'>")
+        var nextCol = $("<div class='col'>")
+
+        var vidRow = $("<div class = 'row' id='videoRow'>")
+        prevCol.append(
+          "<button type = 'button' class = 'btn hidden' id = 'previous'>&#x2190;</button>"
         );
-        $("#youtubeAPI").append(vidEl);
-        $("#youtubeAPI").append(
-          "<button type = 'button' class = 'btn hidden' id = 'next'>Next</button>"
+        nextCol.append(
+          "<button type = 'button' class = 'btn hidden' id = 'next'>&#x2192;</button>"
         );
+        buttonRow.append(prevCol).append(nextCol)
+        $("#youtubeAPI").append(buttonRow);
+        vidRow.append(vidEl);
+        $("#youtubeAPI").append(vidRow);
+
         $("#next").on("click", function () {
           console.log("clicked");
           console.log(videoCount);
