@@ -50,8 +50,8 @@ button.selected {
   justify-content: center;
   width: auto;
   height: auto;
-
-  display: flex;
+  text-align: center;
+  /* display: flex; */
   margin-bottom: 50px;
   background-color: #bee3db;
   border-radius: 25px;
@@ -65,6 +65,9 @@ button.selected {
   font-size: 25px;
   font-family: "Raleway", sans-serif;
   border-radius: 25px;
+}
+#videoRow{
+  padding: 1rem;
 }
 
 /* .hidden {
