@@ -36,9 +36,9 @@ $(document).ready(function () {
       var boredAPIText = $("<div>").text(activity);
       $("#boredAPI").append(boredAPIText);
       var ytURL =
-        "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" +
+        "https://www.googleapis.com/youtube/v3/search?q=" +
         activity +
-        "&key=AIzaSyAuYyVyy_w2WqTYvCmCTrKO6K7me2jMV8I";
+        "&key=AIzaSyBs6Yc4Jx1DRS2w-_Cb74q5UYq6F8UXnnw";
       console.log(ytURL);
       // YT Ajax within Bored ajax
       $.ajax({
@@ -49,10 +49,9 @@ $(document).ready(function () {
         vidID = response2.items[videoCount].id.videoId;
         console.log(vidID);
         vidURL = "https://youtube.com/embed/" + vidID;
-        vidEl = $("<iframe allowfullscreen src=" + vidURL + ">").attr(
-          "id",
-          "ytVideo"
-        );
+        vidEl = $("<iframe allowfullscreen src=" + vidURL + ">")
+          .attr("id", "ytVideo")
+          .attr("style", "padding: 5px");
         vidEl.attr(
           "allow",
           "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -63,18 +62,18 @@ $(document).ready(function () {
           .attr("frameborder", "0")
           .attr("style", "padding: 10px")
           .attr("style", "margin: auto");
-        var buttonRow = $("<div class = 'row'>")
-        var prevCol=$("<div class='col'>")
-        var nextCol = $("<div class='col'>")
+        var buttonRow = $("<div class = 'row'>");
+        var prevCol = $("<div class='col'>");
+        var nextCol = $("<div class='col'>");
 
-        var vidRow = $("<div class = 'row' id='videoRow'>")
+        var vidRow = $("<div class = 'row' id='videoRow'>");
         prevCol.append(
           "<button type = 'button' class = 'btn hidden' id = 'previous'>&#x2190;</button>"
         );
         nextCol.append(
           "<button type = 'button' class = 'btn hidden' id = 'next'>&#x2192;</button>"
         );
-        buttonRow.append(prevCol).append(nextCol)
+        buttonRow.append(prevCol).append(nextCol);
         $("#youtubeAPI").append(buttonRow);
         vidRow.append(vidEl);
         $("#youtubeAPI").append(vidRow);
