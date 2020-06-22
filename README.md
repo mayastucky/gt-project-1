@@ -18,7 +18,7 @@ The present application was made to help users find something to do when they ar
 
 [Deployed Entertain Me Site](https://mayastucky.github.io/gt-project-1/)
 
-![Entertain Me Home Screen](assets/images/EntertaiMeMain.png)
+![Entertain Me Home Screen](assets/images/EntertainMeMain.png)
 ![Entertain Me Home Screen Mobile](assets/images/mobileScreen.png)
 
 
