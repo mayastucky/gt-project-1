@@ -38,7 +38,7 @@ $(document).ready(function () {
       var ytURL =
         "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" +
         activity +
-        "&key=AIzaSyAuYyVyy_w2WqTYvCmCTrKO6K7me2jMV8I";
+        "&key=AIzaSyBs6Yc4Jx1DRS2w-_Cb74q5UYq6F8UXnnw";
       console.log(ytURL);
       // YT Ajax within Bored ajax
       $.ajax({
