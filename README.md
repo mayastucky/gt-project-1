@@ -16,7 +16,7 @@ Clone repository on local machine and run HTML file in browser. After opening th
 ## Usage 
 The present application was made to help users find something to do when they are bored and to be exposed to activities they would not be exposed to otherwise.
 
-[Deployed Entertain Me Site](https://mayastucky.github.io/gt-project-1/)
+[Deployed Entertain Me Site](https://diegocordoba87.github.io/gt-project-1/)
 
 ![Entertain Me Home Screen](assets/images/EntertainMeMain.png)
 ![Entertain Me Home Screen Mobile](assets/images/mobileScreen.png)
